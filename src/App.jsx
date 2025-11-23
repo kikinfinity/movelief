@@ -15,154 +15,233 @@ export default function App() {
   const exerciseDatabase = [
     {
       id: 1,
-      name: 'Gentle Stress Release Flow',
-      type: 'Yoga',
+      name: '溫和釋壓流動',
+      type: '瑜伽',
       duration: 15,
       stressRelief: 5,
       energyRequired: 1,
-      description: 'Slow, mindful movements focusing on breath and releasing tension from your body.',
+      description: '緩慢、專注的動作，配合呼吸，釋放身體的緊繃。',
       poses: [
-        "Child's Pose (3 min) - Let your body melt into the mat",
-        'Cat-Cow (2 min) - Gentle spine movements with breath',
-        'Seated Forward Fold (3 min) - Release lower back tension',
-        'Supine Twist (4 min, 2 min each side) - Wring out stress',
-        'Legs Up the Wall (3 min) - Calm your nervous system'
+        '嬰兒式（3分鐘）- 讓身體融入墊子',
+        '貓牛式（2分鐘）- 溫和的脊椎律動配合呼吸',
+        '坐姿前彎（3分鐘）- 釋放下背緊繃',
+        '仰臥扭轉（4分鐘，每側2分鐘）- 擰出壓力',
+        '靠牆抬腿（3分鐘）- 平靜神經系統'
       ],
-      breathWork: 'Deep belly breathing - 4 counts in, 6 counts out',
-      bestFor: 'Feeling overwhelmed, anxious, or exhausted',
-      location: 'Anywhere with a mat or soft surface'
+      breathWork: '深層腹式呼吸 - 吸氣4拍，吐氣6拍',
+      bestFor: '感到不堪負荷、焦慮或疲憊時',
+      location: '任何有墊子或柔軟表面的地方'
     },
     {
       id: 2,
-      name: 'Calming Breath & Stretch',
-      type: 'Yoga',
+      name: '平靜呼吸伸展',
+      type: '瑜伽',
       duration: 10,
       stressRelief: 5,
       energyRequired: 1,
-      description: 'Quick stress-relief routine when you need immediate calm.',
+      description: '需要立即平靜時的快速釋壓練習，可在小空間進行。',
       poses: [
-        'Easy Seat with Neck Rolls (2 min) - Release shoulder tension',
-        'Seated Cat-Cow (2 min) - Mobilize spine gently',
-        'Seated Side Stretch (2 min) - Open up compressed ribs',
-        "Child's Pose (4 min) - Deep relaxation and grounding"
+        '簡易坐姿配合頸部轉動（2分鐘）- 釋放肩膀緊繃',
+        '坐姿貓牛式（2分鐘）- 溫和活動脊椎',
+        '坐姿側彎（2分鐘）- 打開被壓迫的肋骨',
+        '嬰兒式（4分鐘）- 深度放鬆與扎根'
       ],
-      breathWork: 'Box breathing - 4 in, 4 hold, 4 out, 4 hold',
-      bestFor: 'Quick stress relief, tight schedule, high anxiety',
-      location: 'Office, bedroom, living room - just need floor space'
+      breathWork: '方塊呼吸 - 吸4、閉4、吐4、閉4',
+      bestFor: '快速釋壓、時間緊迫、高度焦慮',
+      location: '辦公室、臥室、客廳 - 只需要地板空間'
     },
     {
       id: 3,
-      name: 'Tension Release Practice',
-      type: 'Yoga',
+      name: '緊繃釋放練習',
+      type: '瑜伽',
       duration: 20,
       stressRelief: 4,
       energyRequired: 2,
-      description: 'Target areas where stress accumulates: neck, shoulders, hips, and lower back.',
+      description: '針對壓力累積的部位：頸部、肩膀、髖部和下背。',
       poses: [
-        'Neck Releases (3 min) - Gentle stretches in all directions',
-        'Shoulder Rolls & Arm Circles (2 min) - Release upper body',
-        'Thread the Needle (4 min, 2 min each) - Deep shoulder release',
-        'Pigeon Pose (6 min, 3 min each) - Release hip tension',
-        'Reclined Butterfly (3 min) - Open hips, calm mind',
-        'Final Relaxation (2 min) - Integration'
+        '頸部釋放（3分鐘）- 各方向溫和伸展',
+        '肩膀轉動與手臂畫圈（2分鐘）- 釋放上半身',
+        '穿針引線式（4分鐘，每側2分鐘）- 深度肩膀釋放',
+        '鴿式（6分鐘，每側3分鐘）- 釋放髖部緊繃',
+        '仰臥蝴蝶式（3分鐘）- 打開髖部，平靜心靈',
+        '最後放鬆（2分鐘）- 整合'
       ],
-      breathWork: 'Progressive relaxation with breath awareness',
-      bestFor: 'Physical tension from stress, desk work',
-      location: 'Home, yoga studio, quiet outdoor space'
+      breathWork: '漸進式放鬆配合呼吸覺察',
+      bestFor: '壓力造成的身體緊繃、久坐辦公',
+      location: '家中、瑜伽教室、安靜的戶外空間'
     },
     {
       id: 4,
-      name: 'Core Calm Practice',
-      type: 'Mat Pilates',
-      duration: 15,
+      name: '扎根流動',
+      type: '瑜伽',
+      duration: 25,
       stressRelief: 4,
-      energyRequired: 2,
-      description: 'Gentle pilates focusing on controlled breathing and core stability to quiet your mind.',
+      energyRequired: 3,
+      description: '緩慢、刻意的動作，讓你回到身體、離開焦慮的思緒。',
       poses: [
-        'Pelvic Tilts (3 min) - Connect breath to movement',
-        'Bridge Lifts (3 min) - Slow, controlled, with breath',
-        'Single Leg Stretch (3 min) - Focus mind on coordination',
-        'Spine Stretch Forward (3 min) - Release tension, lengthen',
-        'Mermaid Stretch (3 min) - Side body opening with breath'
+        '山式配合呼吸（2分鐘）- 找到你的中心',
+        '站立前彎（3分鐘）- 釋放奔馳的思緒',
+        '低弓步變化式（6分鐘，每側3分鐘）- 透過雙腿扎根',
+        '戰士二式保持（4分鐘，每側2分鐘）- 建立內在力量',
+        '寬腿前彎（3分鐘）- 平靜神經系統',
+        '坐姿冥想（4分鐘）- 觀察更平靜的狀態',
+        '大休息（3分鐘）- 完整整合'
       ],
-      breathWork: 'Pilates breath - inhale through nose, exhale with slight engagement',
-      bestFor: 'Need mental focus, want to feel more in control',
-      location: 'Living room, bedroom - just need a mat'
+      breathWork: '烏佳伊呼吸（海洋呼吸）專注與平靜',
+      bestFor: '感到散亂、失連、思緒奔馳',
+      location: '任何可以完全伸展的地方 - 客廳就很適合'
     },
     {
       id: 5,
-      name: 'Restorative Pilates',
-      type: 'Mat Pilates',
-      duration: 20,
-      stressRelief: 5,
-      energyRequired: 2,
-      description: 'Slow, mindful pilates emphasizing breath and gentle core work to restore balance.',
-      poses: [
-        'Breathing Preparation (2 min) - Establish calm foundation',
-        'Chest Lift (3 min) - Gentle engagement, lots of breath',
-        'Side-Lying Leg Series (6 min) - Meditative, controlled',
-        'Swan Prep (3 min) - Gentle back extension',
-        'Roll Downs (3 min) - Massage spine, release tension',
-        "Rest Position (3 min) - Child's pose equivalent"
-      ],
-      breathWork: 'Extended exhales to activate parasympathetic system',
-      bestFor: 'Moderate stress, want structure but gentle',
-      location: 'Home, anywhere quiet with a mat'
-    },
-    {
-      id: 6,
-      name: 'Stress-Relief Walk',
-      type: 'Walking',
+      name: '核心平靜練習',
+      type: '墊上皮拉提斯',
       duration: 15,
       stressRelief: 4,
       energyRequired: 2,
-      description: 'Easy-paced walk to clear your mind and reset your nervous system.',
+      description: '溫和的皮拉提斯，專注於控制呼吸和核心穩定來平靜心智。',
       poses: [
-        'Walk at comfortable pace (15 min total)',
-        'Focus on your breath - sync steps with breathing',
-        'Notice your surroundings - engage senses',
-        'Let thoughts pass like clouds',
-        'End with 5 deep breaths standing still'
+        '骨盆傾斜（3分鐘）- 連結呼吸與動作',
+        '橋式（3分鐘）- 緩慢、控制、配合呼吸',
+        '單腿伸展（3分鐘）- 專注於協調',
+        '脊椎向前伸展（3分鐘）- 釋放緊繃、延展',
+        '美人魚伸展（3分鐘）- 側身打開配合呼吸'
       ],
-      breathWork: '3 steps in, 3 steps out - find your natural rhythm',
-      bestFor: 'Need to clear head, feeling stuck, restless energy',
-      location: 'Neighborhood, park, or walk in place at home'
+      breathWork: '皮拉提斯呼吸 - 鼻吸、輕微收縮吐氣',
+      bestFor: '需要心智專注、想要更有掌控感',
+      location: '客廳、臥室 - 只需要墊子'
+    },
+    {
+      id: 6,
+      name: '修復性皮拉提斯',
+      type: '墊上皮拉提斯',
+      duration: 20,
+      stressRelief: 5,
+      energyRequired: 2,
+      description: '緩慢、專注的皮拉提斯，強調呼吸和溫和的核心運動來恢復平衡。',
+      poses: [
+        '呼吸準備（2分鐘）- 建立平靜基礎',
+        '胸部提升（3分鐘）- 溫和收縮，大量呼吸',
+        '側臥腿部系列（6分鐘）- 冥想式、控制',
+        '天鵝準備式（3分鐘）- 溫和背部伸展',
+        '滾動下降（3分鐘）- 按摩脊椎、釋放緊繃',
+        '休息姿勢（3分鐘）- 相當於嬰兒式、完全休息'
+      ],
+      breathWork: '延長吐氣來啟動副交感神經系統',
+      bestFor: '中度壓力、想要結構但溫和',
+      location: '家中、任何安靜有墊子的地方'
     },
     {
       id: 7,
-      name: 'Quick Calming Walk',
-      type: 'Walking',
-      duration: 10,
+      name: '專注動作流動',
+      type: '墊上皮拉提斯',
+      duration: 25,
       stressRelief: 3,
-      energyRequired: 2,
-      description: 'Short walk break to interrupt stress cycle.',
+      energyRequired: 3,
+      description: '流動的皮拉提斯序列，需要專注，將你從壓力拉到當下。',
       poses: [
-        'Walk at easy pace (8 min)',
-        'Practice 4-7-8 breathing while walking',
-        'Roll shoulders back every minute',
-        'Finish with 2 min standing, eyes closed, deep breathing'
+        '貓式伸展（3分鐘）- 緩慢活動脊椎',
+        '游泳準備式（4分鐘）- 輕度背部運動配合節奏',
+        '平板到倒V（4分鐘）- 核心運動需要專注',
+        '側平板變化式（4分鐘）- 建立穩定與專注',
+        '捲體準備式（4分鐘）- 挑戰需要心智臨在',
+        '像球一樣滾動（3分鐘）- 玩樂、釋壓',
+        '最後伸展（3分鐘）- 整合與平靜'
       ],
-      breathWork: '4-7-8 breath modified for walking',
-      bestFor: 'Need immediate break from stress, limited time',
-      location: 'Around the block, office building, or in place at home'
+      breathWork: '配合呼吸與動作節奏 - 冥想狀態',
+      bestFor: '需要從壓力分心、有中等能量',
+      location: '家中工作室、臥室、任何有墊子空間'
     },
     {
       id: 8,
-      name: 'Breath-Centered Micro Practice',
-      type: 'Yoga',
+      name: '釋壓步行',
+      type: '步行',
+      duration: 15,
+      stressRelief: 4,
+      energyRequired: 2,
+      description: '輕鬆步調的戶外或室內步行，清理思緒、重置神經系統。',
+      poses: [
+        '以舒適步調步行（總共15分鐘）',
+        '專注呼吸 - 將步伐與呼吸同步',
+        '注意周圍環境 - 啟動感官',
+        '讓思緒像雲一樣飄過',
+        '結束時站立深呼吸5次'
+      ],
+      breathWork: '3步吸、3步吐 - 找到你的自然節奏',
+      bestFor: '需要清理思緒、感覺卡住、不安的能量',
+      location: '社區、公園，或在家原地踏步'
+    },
+    {
+      id: 9,
+      name: '溫和動作步行',
+      type: '步行',
+      duration: 20,
+      stressRelief: 5,
+      energyRequired: 2,
+      description: '延長的專注步行，處理壓力並回到平靜基準。',
+      poses: [
+        '前5分鐘 - 讓身體找到自然步調',
+        '接下來10分鐘 - 專注呼吸與身體感受',
+        '最後5分鐘 - 逐漸放慢，注意你的感受',
+        '結束時進行溫和的站立伸展'
+      ],
+      breathWork: '自然呼吸，步行時逐漸加深',
+      bestFor: '高壓力、需要空間處理、情緒不堪負荷',
+      location: '優先戶外、跑步機也可、或大型室內空間'
+    },
+    {
+      id: 10,
+      name: '快速平靜步行',
+      type: '步行',
+      duration: 10,
+      stressRelief: 3,
+      energyRequired: 2,
+      description: '短暫步行休息，打斷壓力循環，獲得立即釋放。',
+      poses: [
+        '以輕鬆步調步行（8分鐘）',
+        '步行時練習4-7-8呼吸',
+        '每分鐘向後轉動肩膀',
+        '結束時站立2分鐘，閉眼，深呼吸'
+      ],
+      breathWork: '4-7-8呼吸（吸4、閉7、吐8）調整為步行',
+      bestFor: '需要立即從壓力中休息、時間有限',
+      location: '繞街區、辦公大樓，或在家原地'
+    },
+    {
+      id: 11,
+      name: '陰瑜伽深度釋放',
+      type: '瑜伽',
+      duration: 30,
+      stressRelief: 5,
+      energyRequired: 1,
+      description: '長時間保持的被動體式，針對深層結締組織，允許完全的心智臣服。',
+      poses: [
+        '蝴蝶式（5分鐘）- 釋放髖部和下背',
+        '人面獅身式/海豹式（5分鐘）- 溫和的心胸打開',
+        '龍式（8分鐘，每側4分鐘）- 深度髖部釋放',
+        '仰臥扭轉（6分鐘，每側3分鐘）- 排毒扭轉',
+        '大休息（6分鐘）- 完全臣服與整合'
+      ],
+      breathWork: '自然呼吸，每次吐氣讓身體更柔軟',
+      bestFor: '深度壓力、創傷保持、需要深刻釋放',
+      location: '家中安靜空間，使用枕頭/毯子支撐'
+    },
+    {
+      id: 12,
+      name: '呼吸中心微練習',
+      type: '瑜伽',
       duration: 5,
       stressRelief: 3,
       energyRequired: 1,
-      description: 'Ultra-quick practice when you have almost no time but need immediate relief.',
+      description: '幾乎沒時間但需要立即釋壓時的超快速練習。',
       poses: [
-        'Seated position of choice (1 min) - Get settled',
-        'Box breathing (2 min) - 4-4-4-4 pattern',
-        'Gentle neck stretches (1 min) - Release immediate tension',
-        'Hands on heart and belly (1 min) - Self-compassion'
+        '選擇的坐姿（1分鐘）- 安定下來',
+        '方塊呼吸（2分鐘）- 4-4-4-4模式',
+        '溫和頸部伸展（1分鐘）- 釋放立即的緊繃',
+        '手放在心臟和腹部（1分鐘）- 自我慈悲'
       ],
-      breathWork: 'Box breathing to quickly regulate nervous system',
-      bestFor: 'Emergency stress relief, between meetings',
-      location: 'Literally anywhere - desk, car, bathroom, bedroom'
+      breathWork: '方塊呼吸快速調節神經系統',
+      bestFor: '緊急釋壓、會議之間、恐慌時刻',
+      location: '真的任何地方 - 辦公桌、車上、浴室、臥室'
     }
   ];
 
@@ -205,17 +284,17 @@ export default function App() {
     const { stressLevel, energy, timeAvailable } = userState;
     
     if (stressLevel >= 5 && energy <= 2) {
-      return "You're very stressed and low on energy. I've selected the gentlest, most restorative practices that will help you feel safe and calm without requiring much effort.";
+      return "你現在壓力很大且能量低落。我選了最溫和、最能恢復的練習，幫助你感到安全和平靜，不需要太多力氣。";
     } else if (stressLevel >= 4 && timeAvailable <= 10) {
-      return "High stress + limited time = quick relief needed. These short practices are designed to interrupt your stress response fast.";
+      return "高壓力 + 時間有限 = 需要快速釋放。這些短練習專門設計來快速打斷你的壓力反應。";
     } else if (stressLevel >= 4) {
-      return "Your stress level is high. These practices specifically target nervous system regulation through breath, gentle movement, and grounding.";
+      return "你的壓力程度偏高。這些練習特別針對透過呼吸、溫和動作和扎根來調節神經系統。";
     } else if (energy <= 2) {
-      return "Low energy today. These gentle movements will help release tension without depleting you further.";
+      return "今天能量偏低。這些溫和的動作會幫助釋放緊繃，不會進一步消耗你。有時候緩慢移動正是我們需要的。";
     } else if (stressLevel <= 2) {
-      return "Your stress is manageable right now. These practices will help maintain your calm state.";
+      return "你的壓力目前還好。這些練習會幫助維持你的平靜狀態，防止壓力累積。";
     } else {
-      return "Moderate stress detected. These practices will help you process what you're feeling and return to a calmer baseline.";
+      return "偵測到中度壓力。這些練習會幫助你處理正在感受的情緒，回到更平靜的基準線。";
     }
   };
 
@@ -235,7 +314,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-4">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
           <div className="flex items-center gap-3 mb-2">
             <Wind className="w-8 h-8 text-indigo-600" />
@@ -246,14 +324,14 @@ export default function App() {
 
         {!selectedExercise && currentView === 'input' && (
           <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">How are you feeling right now?</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">你現在感覺如何？</h2>
             
             <div className="space-y-8">
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <label className="flex items-center gap-2 text-gray-700 font-medium">
                     <Heart className="w-5 h-5 text-red-500" />
-                    Stress Level
+                    壓力程度
                   </label>
                   <span className="text-2xl font-bold text-indigo-600">{userState.stressLevel}/5</span>
                 </div>
@@ -266,8 +344,8 @@ export default function App() {
                   className="w-full h-3 bg-gradient-to-r from-green-200 via-yellow-200 to-red-200 rounded-lg appearance-none cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
-                  <span>Calm</span>
-                  <span>Very Stressed</span>
+                  <span>平靜</span>
+                  <span>非常有壓力</span>
                 </div>
               </div>
 
@@ -275,7 +353,7 @@ export default function App() {
                 <div className="flex items-center justify-between mb-3">
                   <label className="flex items-center gap-2 text-gray-700 font-medium">
                     <Sparkles className="w-5 h-5 text-yellow-500" />
-                    Energy Level
+                    能量程度
                   </label>
                   <span className="text-2xl font-bold text-indigo-600">{userState.energy}/5</span>
                 </div>
@@ -288,8 +366,8 @@ export default function App() {
                   className="w-full h-3 bg-gradient-to-r from-red-200 via-yellow-200 to-green-200 rounded-lg appearance-none cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
-                  <span>Exhausted</span>
-                  <span>Energized</span>
+                  <span>疲憊</span>
+                  <span>精力充沛</span>
                 </div>
               </div>
 
@@ -297,9 +375,9 @@ export default function App() {
                 <div className="flex items-center justify-between mb-3">
                   <label className="flex items-center gap-2 text-gray-700 font-medium">
                     <Clock className="w-5 h-5 text-blue-500" />
-                    Time Available
+                    可用時間
                   </label>
-                  <span className="text-2xl font-bold text-indigo-600">{userState.timeAvailable} min</span>
+                  <span className="text-2xl font-bold text-indigo-600">{userState.timeAvailable} 分鐘</span>
                 </div>
                 <input
                   type="range"
@@ -311,8 +389,8 @@ export default function App() {
                   className="w-full h-3 bg-gradient-to-r from-yellow-200 to-blue-200 rounded-lg appearance-none cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
-                  <span>5 min</span>
-                  <span>30 min</span>
+                  <span>5 分鐘</span>
+                  <span>30 分鐘</span>
                 </div>
               </div>
             </div>
@@ -321,7 +399,7 @@ export default function App() {
               onClick={getRecommendations}
               className="w-full mt-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl p-4 font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg flex items-center justify-center gap-2"
             >
-              Find My Practice
+              找到我的練習
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
@@ -333,7 +411,7 @@ export default function App() {
               <div className="flex items-start gap-3">
                 <Wind className="w-6 h-6 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold mb-2">Personalized for You</h3>
+                  <h3 className="font-semibold mb-2">為你個人化推薦</h3>
                   <p className="text-indigo-100">{getInsight()}</p>
                 </div>
               </div>
@@ -347,7 +425,7 @@ export default function App() {
                       <div className="flex items-center gap-2 mb-2">
                         {index === 0 && (
                           <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">
-                            BEST MATCH
+                            最佳匹配
                           </span>
                         )}
                         <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium">
@@ -360,7 +438,7 @@ export default function App() {
                     </div>
                     <div className="text-right ml-4">
                       <div className="text-3xl font-bold text-indigo-600">{exercise.duration}</div>
-                      <div className="text-xs text-gray-500">minutes</div>
+                      <div className="text-xs text-gray-500">分鐘</div>
                     </div>
                   </div>
 
@@ -374,7 +452,7 @@ export default function App() {
                     className="w-full bg-indigo-600 text-white rounded-lg p-3 font-medium hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
                   >
                     <Play className="w-4 h-4" />
-                    Start This Practice
+                    開始這個練習
                   </button>
                 </div>
               ))}
@@ -384,7 +462,7 @@ export default function App() {
               onClick={() => setCurrentView('input')}
               className="w-full bg-white text-indigo-600 border-2 border-indigo-600 rounded-xl p-4 font-semibold hover:bg-indigo-50 transition-colors"
             >
-              Change My Settings
+              更改我的設定
             </button>
           </>
         )}
@@ -397,7 +475,7 @@ export default function App() {
                   {selectedExercise.type}
                 </span>
                 <h2 className="text-2xl font-bold text-gray-800">{selectedExercise.name}</h2>
-                <p className="text-gray-600 mt-1">{selectedExercise.duration} minutes</p>
+                <p className="text-gray-600 mt-1">{selectedExercise.duration} 分鐘</p>
               </div>
             </div>
 
@@ -405,13 +483,13 @@ export default function App() {
               <div className="bg-indigo-50 rounded-xl p-6">
                 <h3 className="font-semibold text-indigo-900 mb-3 flex items-center gap-2">
                   <Wind className="w-5 h-5" />
-                  Breathing Technique
+                  呼吸技巧
                 </h3>
                 <p className="text-indigo-800">{selectedExercise.breathWork}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-gray-800 mb-3">Practice Sequence:</h3>
+                <h3 className="font-semibold text-gray-800 mb-3">練習順序：</h3>
                 <div className="space-y-3">
                   {selectedExercise.poses.map((pose, idx) => (
                     <div key={idx} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
@@ -426,8 +504,7 @@ export default function App() {
 
               <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded">
                 <p className="text-sm text-green-800">
-                  <strong>Remember:</strong> This is about releasing stress, not perfecting poses. 
-                  Listen to your body, breathe deeply, and be gentle with yourself.
+                  <strong>記得：</strong>這是關於釋放壓力，不是完美姿勢。傾聽你的身體，深呼吸，對自己溫柔一點。
                 </p>
               </div>
             </div>
@@ -437,7 +514,7 @@ export default function App() {
               className="w-full bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-xl p-4 font-semibold hover:from-green-700 hover:to-teal-700 transition-all flex items-center justify-center gap-2"
             >
               <CheckCircle className="w-5 h-5" />
-              I've Completed This Practice
+              我完成這個練習了
             </button>
           </div>
         )}
@@ -448,9 +525,9 @@ export default function App() {
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Beautiful Work 💙</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">做得真好 💙</h3>
               <p className="text-gray-600">
-                You moved your body and relieved your mind. Notice how you feel now compared to before.
+                你活動了身體，釋放了心靈。覺察一下現在的感覺與練習前有什麼不同。
               </p>
             </div>
           </div>
